@@ -16,6 +16,7 @@
 		657034AB244C011D000DC488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 657034AA244C011D000DC488 /* main.m */; };
 		657034B5244C011D000DC488 /* SystemControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657034B4244C011D000DC488 /* SystemControlTests.m */; };
 		657034C0244C011D000DC488 /* SystemControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657034BF244C011D000DC488 /* SystemControlUITests.m */; };
+		657034D1244C3490000DC488 /* SysInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657034CF244C3490000DC488 /* SysInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		657034BB244C011D000DC488 /* SystemControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		657034BF244C011D000DC488 /* SystemControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemControlUITests.m; sourceTree = "<group>"; };
 		657034C1244C011D000DC488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657034CF244C3490000DC488 /* SysInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysInfoViewController.m; sourceTree = "<group>"; };
+		657034D0244C3490000DC488 /* SysInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysInfoViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		65703497244C011C000DC488 /* SystemControl */ = {
 			isa = PBXGroup;
 			children = (
+				657034CE244C3471000DC488 /* SysInfoShow */,
 				65703498244C011C000DC488 /* AppDelegate.h */,
 				65703499244C011C000DC488 /* AppDelegate.m */,
 				6570349B244C011C000DC488 /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				657034C1244C011D000DC488 /* Info.plist */,
 			);
 			path = SystemControlUITests;
+			sourceTree = "<group>";
+		};
+		657034CE244C3471000DC488 /* SysInfoShow */ = {
+			isa = PBXGroup;
+			children = (
+				657034D0244C3490000DC488 /* SysInfoViewController.h */,
+				657034CF244C3490000DC488 /* SysInfoViewController.m */,
+			);
+			path = SysInfoShow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 			files = (
 				657034A0244C011C000DC488 /* ViewController.m in Sources */,
 				6570349A244C011C000DC488 /* AppDelegate.m in Sources */,
+				657034D1244C3490000DC488 /* SysInfoViewController.m in Sources */,
 				657034AB244C011D000DC488 /* main.m in Sources */,
 				6570349D244C011C000DC488 /* SceneDelegate.m in Sources */,
 			);
@@ -446,7 +460,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.SystemControl;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielyu.SystemControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.SystemControl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielyu.SystemControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
